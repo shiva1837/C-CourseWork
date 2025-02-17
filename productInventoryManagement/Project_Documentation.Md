@@ -54,6 +54,7 @@ Upon execution, the program will:
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Author
 **Shivamani Jadi**
