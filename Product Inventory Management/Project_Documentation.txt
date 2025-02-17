@@ -44,6 +44,7 @@ The **Product Inventory Management System** is a C++ program that reads product 
 
 ## File Structure
 ```
+|-- MakeFile                         # program compiles file
 |-- project1.cpp                     # Main program file
 |-- productData.txt                  # Input file containing product data
 |-- README.md                        # ReadMe File
