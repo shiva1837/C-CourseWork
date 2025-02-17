@@ -1,15 +1,15 @@
 /********************************************************************************************/
 /*  Author: Shivamani Jadi 
- *  Major:  Computer Science 
- *  Creation Date: 02/10/2025
- *  Section: 010
- *  Due Date: 02/17/2025
- *  Professor Name: Yong Zhang
- *  Assignment: Project #1  
- *  Purpose: This program reads product data from a file, stores it in a struct array,
- *           and performs tasks such as displaying product details, identifying the most
- *           expensive product, and finding products with the lowest stock level.               
- ********************************************************************************************/
+/*  Major:  Computer Science 
+/*  Creation Date: 02/10/2025
+/*  Section: 010
+/*  Due Date: 02/17/2025
+/*  Professor Name: Yong Zhang
+/*  Assignment: Project #1  
+/*  Purpose: This program reads product data from a file, stores it in a struct array,
+/*           and performs tasks such as displaying product details, identifying the most
+/*           expensive product, and finding products with the lowest stock level.               
+/********************************************************************************************/
 
  #include <iostream>  // For input and output
  #include <fstream>   // For file input and output
