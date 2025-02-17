@@ -53,7 +53,7 @@ Upon execution, the program will:
 4. Display products with the lowest stock.
 
 ## License
-This project is licensed under the MIT License. See '![License](https://img.shields.io/badge/License-MIT-blue.svg)` file for details.
+This project is licensed under the MIT License. See '[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)` file for details.
 
 ## Author
 **Shivamani Jadi**
