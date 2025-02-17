@@ -82,9 +82,7 @@
      }
  
      cout << "\nMost Expensive Product:\n";
-     cout << products[maxIndex].productName << ", " 
-          << products[maxIndex].category << ", $" 
-          << fixed << setprecision(2) << products[maxIndex].price << endl;
+     cout << products[maxIndex].productName << ", " << products[maxIndex].category << ", $" << fixed << setprecision(2) << products[maxIndex].price << endl;
  }
  
  // Function to find and display products with the lowest stock
@@ -100,9 +98,7 @@
      cout << "\nProduct(s) with Lowest Stock:\n";
      for (int i = 0; i < size; i++) {
          if (products[i].stock == minStock) {
-             cout << products[i].productName << ", " 
-                  << products[i].category << ", Stock: " 
-                  << products[i].stock << endl;
+             cout << products[i].productName << ", " << products[i].category << ", Stock: " << products[i].stock << endl;
          }
      }
  } 
