@@ -1,0 +1,49 @@
+# Product Inventory Management System
+
+## Project Description
+The **Product Inventory Management System** is a C++ program that reads product data from a file, stores it in a structured array, and performs various operations such as:
+- Displaying all product details
+- Identifying the most expensive product
+- Finding products with the lowest stock level
+
+## Features
+- Reads product information from an external file (`productData.txt`)
+- Stores product details using a structured data type
+- Displays product inventory in a formatted table
+- Identifies and displays the most expensive product
+- Finds and lists products with the lowest stock availability
+
+## Installation & Setup
+1. Ensure you have a C++ compiler installed (e.g., GCC, Clang, MSVC).
+2. Place `productData.txt` in the same directory as the executable.
+3. Compile the program using:
+   ```sh
+   g++ project1.cpp -o inventory_manager
+   ```
+4. Run the program:
+   ```sh
+   ./inventory_manager
+   ```
+
+## File Structure
+```
+|-- project1.cpp         # Main program file
+|-- productData.txt      # Input file containing product data
+|-- README.md            # Project documentation
+|-- LICENSE              # License information
+```
+
+## Usage
+Upon execution, the program will:
+1. Load product data from `productData.txt`.
+2. Display a list of products with their details.
+3. Identify and show the most expensive product.
+4. Display products with the lowest stock.
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Author
+**Shivamani Jadi**
+- Computer Science Major
+- Kutztown University of Pennsylvania
