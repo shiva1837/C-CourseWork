@@ -17,7 +17,7 @@ The **Product Inventory Management System** is a C++ program that reads product 
 1. Ensure you have a C++ compiler installed (e.g., GCC, Clang, MSVC).
 2. Place `productData.txt` in the same directory as the executable.
 3. Compile the program using two Methods: 
-   ### Method: 01 (Using the MakeFile)
+    Method: 01 (Using the MakeFile)
          Follow these steps to compile and run the program using the `Makefile`:
          Step: 01 makesure 'MakeFile' is in the same directory as the executable.
          Step: 02 Compile the Porgram: 
@@ -29,7 +29,7 @@ The **Product Inventory Management System** is a C++ program that reads product 
          Step: 04 Remove the compile a.out file: 
                   rm a.out
       
-   ### Method: 02 (using Manual Commands) 
+    Method: 02 (using Manual Commands) 
          Alternatively, you can compile and run the program manually using the following steps:
          Step: 01 Compile the Porgram: 
                   g++ project1.cpp -o inventory_manager
