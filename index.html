@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grab N Go Mart | Futuristic Night-Mart Experience</title>
+  <meta
+    name="description"
+    content="Grab N Go Mart is your premium quick stop in Kutztown, PA for snacks, cold drinks, essentials, and one of the area's largest tobacco and vaping selections."
+  />
+  <meta name="theme-color" content="#0b0f19" />
+
+  <!-- Premium typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data (kept from original for local SEO) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ConvenienceStore",
+      "name": "Grab N Go Mart",
+      "telephone": "+1-610-732-3075",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "230 W Main St",
+        "addressLocality": "Kutztown",
+        "addressRegion": "PA",
+        "postalCode": "19530",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.1",
+        "reviewCount": "16"
+      }
+    }
+  </script>
+
+  <!-- Three.js + GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/loaders/GLTFLoader.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Full-screen 3D stage -->
+  <div id="webgl-stage" aria-hidden="true"></div>
+
+  <header class="site-header glass" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Grab N Go Mart home">Grab N Go Mart</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#products">What We Carry</a>
+        <a href="#location">Location</a>
+      </nav>
+      <a class="btn btn-sm" href="tel:+16107323075">Call Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy glass reveal">
+          <p class="eyebrow">Luxury Convenience, Reimagined</p>
+          <h1>Welcome to Kutztown’s Futuristic Night-Mart</h1>
+          <p class="lead">
+            Grab N Go Mart blends local convenience with premium atmosphere — from quick snacks and cold drinks
+            to one of the area’s most expansive tobacco/vape selections.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="tel:+16107323075">Call Now</a>
+            <a class="btn btn-ghost" href="https://maps.google.com/?q=230+W+Main+St,+Kutztown,+PA+19530" target="_blank" rel="noopener noreferrer">Get Directions</a>
+          </div>
+          <ul class="trust-row" aria-label="Trust highlights">
+            <li>4.1★ Local Rating</li>
+            <li>Friendly Staff</li>
+            <li>Wide Product Selection</li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Store highlights">
+          <div class="panel-card glass">
+            <h2>Fast. Local. Reliable.</h2>
+            <p>Stop in for quick snacks, cold drinks, and essentials on your way through town.</p>
+          </div>
+          <div class="panel-card panel-accent glass">
+            <h2>One of the Area’s Biggest Tobacco/Vape Selections</h2>
+            <p>Visit in-store to browse options and check current availability.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow glass reveal">
+        <h2>A Reliable Neighborhood Store, Elevated</h2>
+        <p>
+          Grab N Go Mart serves Kutztown with friendly service, practical selection, and a fast shopping experience.
+          Whether you need a quick drink, snack, or daily essentials, every stop is frictionless.
+        </p>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>What We Carry</h2>
+          <p>Everything you need for the day, in one high-speed stop.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card glass reveal">
+            <div class="icon" aria-hidden="true">🍫</div>
+            <h3>Snacks &amp; Quick Bites</h3>
+            <p>Chips, candy, and grab-and-go treats for every craving.</p>
+          </article>
+          <article class="card glass reveal">
+            <div class="icon" aria-hidden="true">🥤</div>
+            <h3>Cold Drinks &amp; Beverages</h3>
+            <p>Sodas, energy drinks, water, and more.</p>
+          </article>
+          <article class="card glass reveal">
+            <div class="icon" aria-hidden="true">💨</div>
+            <h3>Tobacco &amp; Vaping Selection</h3>
+            <p>One of the area’s largest selections — visit in-store for details.</p>
+          </article>
+          <article class="card glass reveal">
+            <div class="icon" aria-hidden="true">🧴</div>
+            <h3>Everyday Convenience Essentials</h3>
+            <p>Daily basics available when you need them most.</p>
+          </article>
+        </div>
+        <div class="centered-action reveal">
+          <a class="btn" href="tel:+16107323075">Call to Check Availability</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Why Choose Grab N Go Mart</h2>
+        </div>
+        <ul class="why-list">
+          <li class="glass reveal"><strong>Fast &amp; Convenient</strong><span>Quick stop, easy shopping.</span></li>
+          <li class="glass reveal"><strong>Wide Selection</strong><span>Snacks, drinks, and specialty tobacco/vape range.</span></li>
+          <li class="glass reveal"><strong>Friendly Team</strong><span>Welcoming staff and helpful service.</span></li>
+          <li class="glass reveal"><strong>Local &amp; Trusted</strong><span>A dependable part of the Kutztown community.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Local Customers Say It Best</h2>
+          <p class="badge">Rated 4.1 by local customers</p>
+        </div>
+        <div class="reviews-grid">
+          <blockquote class="glass reveal">“Amazing store for all my needs — my daily go-to spot. Highly recommend.”</blockquote>
+          <blockquote class="glass reveal">“Great selection, vibe, staff, and prices.”</blockquote>
+          <blockquote class="glass reveal">“Nice staff, and really good options for quick snacks and drinks.”</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="section">
+      <div class="container location-grid">
+        <div class="glass reveal">
+          <h2>Visit Grab N Go Mart</h2>
+          <ul class="info-list">
+            <li><strong>Address:</strong> 230 W Main St, Kutztown, PA 19530</li>
+            <li><strong>Phone:</strong> <a href="tel:+16107323075">(610) 732-3075</a></li>
+            <li><strong>Hours:</strong> Open daily • Closes at 8 PM</li>
+          </ul>
+          <a class="btn" href="https://maps.google.com/?q=230+W+Main+St,+Kutztown,+PA+19530" target="_blank" rel="noopener noreferrer">Get Directions</a>
+        </div>
+        <div class="map-placeholder glass reveal" role="img" aria-label="Map placeholder for 230 W Main St, Kutztown, PA 19530">
+          <p>Map Preview</p>
+          <small>230 W Main St, Kutztown, PA 19530</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band reveal">
+      <div class="container cta-band-inner glass">
+        <h2>Need a quick stop that has it all?</h2>
+        <div class="hero-actions">
+          <a class="btn" href="tel:+16107323075">Call Grab N Go Mart</a>
+          <a class="btn btn-ghost light" href="https://maps.google.com/?q=230+W+Main+St,+Kutztown,+PA+19530" target="_blank" rel="noopener noreferrer">Get Directions</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid glass">
+      <div>
+        <h3>Grab N Go Mart</h3>
+        <p>230 W Main St, Kutztown, PA 19530</p>
+        <p><a href="tel:+16107323075">(610) 732-3075</a></p>
+        <p>Open daily • Closes at 8 PM</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#products">What We Carry</a>
+        <a href="#location">Location</a>
+      </nav>
+    </div>
+    <p class="copyright">© <span id="year"></span> Grab N Go Mart. All rights reserved.</p>
+  </footer>
+
+  <div class="sticky-cta glass" aria-label="Quick actions">
+    <a href="tel:+16107323075">Call</a>
+    <a href="https://maps.google.com/?q=230+W+Main+St,+Kutztown,+PA+19530" target="_blank" rel="noopener noreferrer">Directions</a>
+  </div>
+</body>
+</html>
